@@ -13,13 +13,12 @@ module.exports = class User extends Sequelize.Model {
           type: Sequelize.INTEGER,
         },
         email: {
-          type: Sequelize.STRING(50),
-          allowNull: false,
-          unique: true,
+          type: Sequelize.STRING,
+          allowNull: true,
         },
         password: {
-          type: Sequelize.STRING(200),
-          allowNull: false,
+          type: Sequelize.STRING,
+          allowNull: true,
         },
       },
       // 테이블 옵션 설정
